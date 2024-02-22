@@ -6,7 +6,7 @@ description = "Counting words from the clipboard content."
 license = "MIT"
 authors = ["magnusrodseth"]
 homepage = "https://github.com/magnusrodseth/clipcount"
-keywords = ["clipboard", "count", "words", "text", "content", "rust", "cli", "utility"]
+keywords = ["clipboard", "count", "words", "text", "cli"]
 readme = "README.md"
 repository = "https://github.com/magnusrodseth/clipcount"
 

@@ -18,7 +18,15 @@ cargo install clipcount
 
 2. 🏃🏽 Run `clipcount` from the command line
 
-3. ✅ You're done. What did you expect?
+3. ✅ You're done. What more did you expect?
+
+## I miss `wc`
+
+The application provides an optional flag to present the output in the same format as `wc`:
+
+```sh
+clipcount --wc
+```
 
 ## License
 

@@ -1,6 +1,6 @@
 [package]
 name = "clipcount"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 description = "Counting words from the clipboard content."
 license = "MIT"

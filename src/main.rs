@@ -22,24 +22,25 @@ fn main() {
         Err(_) => String::new(),
     };
 
+    if text.is_empty() {
+        eprintln!("No text found on the clipboard");
+        return;
+    }
+
     let Processed {
         line_count,
         word_count,
         character_count,
     } = process_text(&text);
 
-    if text.is_empty() {
-        eprintln!("No text found on the clipboard");
+    if args.wc {
+        println!("{} {} {}", line_count, word_count, character_count);
         return;
     }
 
-    if args.wc {
-        println!("{} {} {}", line_count, word_count, character_count);
-    } else {
-        println!("Word count: {}", word_count);
-        println!("Character count: {}", character_count);
-        println!("Line count: {}", line_count);
-    }
+    println!("Word count: {}", word_count);
+    println!("Character count: {}", character_count);
+    println!("Line count: {}", line_count);
 }
 
 struct Processed {

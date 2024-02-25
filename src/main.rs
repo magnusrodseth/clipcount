@@ -51,8 +51,7 @@ struct Processed {
 
 /// Process the text to count lines, words, and characters.
 fn process_text(text: &str) -> Processed {
-    let words = text.unicode_words().collect::<Vec<&str>>();
-    let word_count = words.len();
+    let word_count = text.unicode_words().count();
     let character_count = text.graphemes(true).count();
     let line_count = text.lines().count();
 

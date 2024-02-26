@@ -1,5 +1,9 @@
 # `clipcount`: Counting words from the clipboard content
 
+<p align="center">
+  <img src="https://img.shields.io/crates/d/clipcount">
+</p>
+
 ## Why does this exist?
 
 Do you find yourself often needing to count the number of words in a piece of text? You could use a website, or the `wc` command-line tool, but why not use something **stupid simple**?
